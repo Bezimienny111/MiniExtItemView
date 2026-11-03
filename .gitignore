@@ -1,0 +1,9 @@
+/out/
+/.vs/
+/.vscode/
+/CMakeUserPresets.json
+*.dll
+*.lib
+*.obj
+*.pdb
+*.vdf

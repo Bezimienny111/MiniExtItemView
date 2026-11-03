@@ -1,0 +1,7 @@
+Union API and Gothic API: Copyright 2025 Gratt & Union Team.
+Union API links Microsoft Detours, Xiph Ogg/Vorbis and zlib.
+Full copyright notices, redistribution conditions and disclaimers are in licenses/.
+SDK sources and their nested dependencies are pinned Git submodules.
+Build helpers originate from Patrix9999/union-plugin-template.
+GothicVDFS is an external build tool and is not included in this repository or release.
+No new license for CZM/plugin code is granted by this export.

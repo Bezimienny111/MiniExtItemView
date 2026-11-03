@@ -1,0 +1,9 @@
+[BEGINVDF]
+Comment=MiniExtItemView v${PROJECT_VERSION}
+BaseDir=.
+VDFName=MiniExtItemView.vdf
+[FILES]
+[EXCLUDE]
+[INCLUDE]
+System\* -r
+[ENDVDF]

@@ -1,0 +1,94 @@
+{
+    "schemaVersion":  1,
+    "plugin":  "MiniExtItemView",
+    "version":  "0.1.0",
+    "sourceRepository":  "https://github.com/Bezimienny111/Czosnekdll",
+    "baseCommit":  "9a7cd0fa8240cefbc104acf9131220a575ef9bd8",
+    "sourceKind":  "selected-local-worktree-files",
+    "inputs":  [
+                   {
+                       "path":  "src/DllMain.cpp",
+                       "sha256":  "112FAFC1885115D2AFEF9F77A66A69C518B25D89F19212E7B6BFF06C4CE005B9"
+                   },
+                   {
+                       "path":  "src/IppFileTemplate.in",
+                       "sha256":  "2F7C332AD0263CCDC58AB2C6FD66FA43A442067AA4881D0F353D1DC76D3D4952"
+                   },
+                   {
+                       "path":  "src/modules/miniExtItemView/MiniExtItemViewModule.h",
+                       "sha256":  "6EEF11078CD0661090D6D4302D8CF08FC63CC97C12CE6D61D211D94FA5798C42"
+                   },
+                   {
+                       "path":  "src/modules/miniExtItemView/MiniExtItemViewModule.ipp",
+                       "sha256":  "6C3860E0C6539D3AF163D63F8A22084D2316ED5A4E55616E5D09F86627CAEC8B"
+                   },
+                   {
+                       "path":  "cmake/generate_ipp_translation_units.cmake",
+                       "sha256":  "5975976CD65AE53F46759DE35106734E908A5A59BEB31352C75BD16D21B9B928"
+                   },
+                   {
+                       "path":  "cmake/get_targeted_gothic_engines.cmake",
+                       "sha256":  "617ADEA4D473341C5F076E72F26C33E73D9BB6C9A655C823ADAD8019DD7E8734"
+                   },
+                   {
+                       "path":  "cmake/target_add_versioninfo.cmake",
+                       "sha256":  "C0BAC429D92816376A1466A0AB2C88BB2B254F6A258826FF7456C65E8C6B9C6C"
+                   },
+                   {
+                       "path":  "cmake/version.rc.in",
+                       "sha256":  "A235C41D4C05397F1AC9F255152B3BD24FD9D575971408993AF779294723AF23"
+                   },
+                   {
+                       "path":  "cmake/run_gothic_vdfs.cmake",
+                       "sha256":  "9487C5596DE5A1F0DF460A53E58E0D6038E158F8E84B2A49FAE43C0204371340"
+                   },
+                   {
+                       "path":  "dependencies/union/CMakeLists.txt",
+                       "sha256":  "86CF3AB0F75379DF0FED4E7F8A13D32A9928ADD1422C053E4012C0D05E6AD3B0"
+                   },
+                   {
+                       "path":  "mini-ext-item-view-vdf/build.vm",
+                       "sha256":  "C607E8228ED7DFF34EA13ACE5F850F5AEEE87C84C07330B5E4F019F0B7187ECA"
+                   },
+                   {
+                       "path":  "docs/Fulldoc/miniExtItemView/documentation.md",
+                       "sha256":  "AF8524B44FD21B90DB1032687543FF884EFD9F5CD95ECE4CA5EBA8D5DAE9D116"
+                   },
+                   {
+                       "path":  "docs/Fulldoc/miniExtItemView/GDD.md",
+                       "sha256":  "BFA38604DDC4B2063BE5BD8A2BF7C4841568921BB31114134412ABDA8CFF6C8B"
+                   },
+                   {
+                       "path":  "src/common/TextWrap.h",
+                       "sha256":  "9F08F9329E1F305CA59F44CB392D4DC929728AA6CF8A2A962B300DAA0C328EF0"
+                   },
+                   {
+                       "path":  "tools/standalone/CMakeLists.txt.in",
+                       "sha256":  "1C201307FC6A8B346AE8C854DBF3F50E72E75B1F6BE0867795DE48EEB508562A"
+                   },
+                   {
+                       "path":  "tools/standalone/README.md.in",
+                       "sha256":  "4FA15088A62D86730DD09154750C3860EDA9EFA3969E69E91BBA389645D08C4A"
+                   },
+                   {
+                       "path":  "tools/standalone/gitignore.in",
+                       "sha256":  "317042ACA1BD357289DDE98F9A28E5DFD665D23657049980EBC7AEBE7A6F960F"
+                   },
+                   {
+                       "path":  "tools/Export-StandalonePlugins.ps1",
+                       "sha256":  "1247EE2190A4569BD6F8D1A2EDA1F39D1C33F60BF468348BF85160EAA294AF13"
+                   }
+               ],
+    "sdk":  [
+                {
+                    "path":  "dependencies/union/union-api",
+                    "commit":  "167c5573653a8d89c1fee01865b1ac4502935e3f",
+                    "url":  "https://gitlab.com/union-framework/union-api.git"
+                },
+                {
+                    "path":  "dependencies/union/gothic-api",
+                    "commit":  "7c76df0bdbf935de67da77956197f6d4f887ef8b",
+                    "url":  "https://gitlab.com/union-framework/gothic-api.git"
+                }
+            ]
+}
