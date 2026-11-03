@@ -52,11 +52,11 @@
                    },
                    {
                        "path":  "docs/Fulldoc/miniExtItemView/documentation.md",
-                       "sha256":  "AF8524B44FD21B90DB1032687543FF884EFD9F5CD95ECE4CA5EBA8D5DAE9D116"
+                       "sha256":  "A93E577CFD90FD934F9B43CF6E6DE44DB0168B5B3B2E9B78936E3237DD05A9EF"
                    },
                    {
                        "path":  "docs/Fulldoc/miniExtItemView/GDD.md",
-                       "sha256":  "BFA38604DDC4B2063BE5BD8A2BF7C4841568921BB31114134412ABDA8CFF6C8B"
+                       "sha256":  "465DCACA8C893FC4780BD298EF3EEB550696CBE63101D2185B41E4C675C8F599"
                    },
                    {
                        "path":  "src/common/TextWrap.h",
@@ -68,7 +68,7 @@
                    },
                    {
                        "path":  "tools/standalone/README.md.in",
-                       "sha256":  "4FA15088A62D86730DD09154750C3860EDA9EFA3969E69E91BBA389645D08C4A"
+                       "sha256":  "DE9AA97FE7885CB72C6BB63039FE8042FF7FDCC057466857A373C5AA2F81E9AD"
                    },
                    {
                        "path":  "tools/standalone/gitignore.in",

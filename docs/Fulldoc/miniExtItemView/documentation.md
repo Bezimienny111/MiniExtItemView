@@ -10,8 +10,8 @@ sidecara, externali, menu i INI. Kod:
 [header](../../../src/modules/miniExtItemView/MiniExtItemViewModule.h),
 [hooki](../../../src/modules/miniExtItemView/MiniExtItemViewModule.ipp).
 Wspolny [TextWrap](../../../src/common/TextWrap.h) mierzy aktualny font.
-CMakeLists (integration-repository reference; not exported) wydziela te translation units i generuje
-G1/G1A/G2/G2A, a [DllMain](../../../src/DllMain.cpp) akceptuje te cztery silniki.
+CMakeLists (integration-repository reference; not exported) wydziela translation units wariantow
+silnika akceptowanych przez [DllMain](../../../src/DllMain.cpp).
 To zakres kompilacji, nie deklaracja odbioru runtime wszystkich wersji.
 
 Target `MiniExtItemView`, packaging `build_mini_ext_item_view_vdf`, recipe
@@ -23,7 +23,7 @@ MINI_EIV_VDF_DEPLOY_DIR do dodatkowej. Sama zmiana docs nie wymaga buildu/deploy
 ## Samodzielna publikacja (2026-11-03)
 
 Repo publikacyjne: `Bezimienny111/MiniExtItemView`, pierwsza wersja
-`v0.1.0` prerelease. Zrodlem prawdy pozostaje repo integracyjne CZM;
+`v0.1.0` release. Zrodlem prawdy pozostaje repo integracyjne CZM;
 eksporter (integration-repository reference; not exported) kopiuje allowliste
 aktualnych plikow worktree i przypina SDK jako submoduly. Manifest zawiera
 SHA256 wejsc oraz bazowy commit; sam commit nie opisuje lokalnych zmian.
@@ -49,7 +49,7 @@ G1/G1A: PrintTimed/PrintTimedCX z time=-2 sa przechwytywane i zapamietywane
 z pozycja/kolorem zamiast natywnego drukowania. Przy Blit pierwsze rysowanie
 buduje layout; przy niepowodzeniu odtwarza oryginalne wydruki. Kolejne
 Blit w tym samym kontekscie nie powiela rysunku.
-G2/G2A: odczyt natywnych textLines, a przy braku poprawnego layoutu native Blit.
+Pozostale warianty: odczyt natywnych textLines, a przy braku poprawnego layoutu native Blit.
 
 Teksty sortowane po Y/X. Pierwszy jest tytulem; dalej maks. 6 pol, po jednym
 label i value na wysokosci. Tytul z drugim tekstem w tym samym Y, wiecej niz
@@ -60,7 +60,7 @@ Podczas mini draw PrintChars zbiera koncowe glyph runs do DrawPass (font,
 kolor i pozycja). Po native Draw nastepuje `DrawFinalText`: bez tla, z
 tymczasowym attach panelu, z replay guardem. Ma zachowac tekst nad preview.
 RenderItem dla info-preview przesuwa je w poziomie do srodka 5500 virtual,
-po native render wykonuje FlushAlphaPolys (G2/G2A) i FlushPolys.
+po native render wykonuje FlushAlphaPolys tam, gdzie jest dostepne, i FlushPolys.
 DrawContext odtwarza pierwotny X preview po zakonczeniu DrawItemInfo.
 
 ## Layout
@@ -106,7 +106,7 @@ odbioru; nie zakladac, ze dwa wrappery uloza sie poprawnie.
 Zrodla bazowe maja lokalne, niecommitowane zmiany; eksport zachowuje ich
 aktualny stan i identyfikuje pliki przez SHA256.
 2026-11-03: standalone x86 MSVC Release PASS z osobno skompilowanymi
-G1/G1A/G2/G2A i wersja DLL 0.1.0.0, po pobraniu przypietych SDK z upstream.
+warianty SDK i wersja DLL 0.1.0.0, po pobraniu przypietych SDK z upstream.
 VDF 449640 B: dokladnie MiniExtItemView.dll i UnionAPI.dll; katalog,
 zgodnosc bajtowa payloadow i PE32 x86 PASS.
 Bez nowego host testu Mini, reparse VM, wdrozenia ani odbioru layeringu
@@ -121,7 +121,7 @@ Mini deleguje Blit do oryginalu; nie przeskalowuje danych tekstury.
 Geometria panelu nie jest rozmiarem bufora tekstury.
 
 SDK G1 potwierdza adresy CacheInNamed 0x005CBA70 oraz ConvertTextureFormat
-0x00720DC0. Referencyjny kod silnika G2 (nie dowod identycznych instrukcji
+0x00720DC0. Referencyjny kod innego wariantu silnika (nie dowod identycznych instrukcji
 G1) wykonuje ResizeTexture przed dekodowaniem DXT1, traktujac wewnetrzny
 format12 jako 1 bajt/piksel zamiast blokow kompresji. To mocny podejrzany
 odczyt poza buforem przy zmianie wymiarow. Wartosci 0x100/0x100/0x0C

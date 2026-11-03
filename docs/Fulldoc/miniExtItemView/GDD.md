@@ -8,7 +8,7 @@ natywnej wysokosci. Nie dodaje nowych opisow, przewijania ani ustawien.
 Gdy ukladu nie da sie bezpiecznie przebudowac, pozostawia natywny panel.
 
 Jest alternatywnym wariantem prezentacji, a nie pelnym ExtendedItemView.
-Pakiet kompilowany jest dla G1/G1A/G2/G2A; odbior wizualny zalezy od silnika
+Pakiet obejmuje warianty silnika; odbior wizualny zalezy od silnika
 i innych rozszerzen interfejsu.
 
 Na G1 z fyryNy GD3D11 zgloszono losowy crash przy ladowaniu tekstury
@@ -19,5 +19,5 @@ potwierdzone. Nie wdrozono poprawki ani ograniczenia funkcjonalnosci.
 [Dokumentacja](documentation.md).
 
 Dystrybucja standalone: `Bezimienny111/MiniExtItemView`, `v0.1.0`
-prerelease, tylko VDF do `Data/Plugins`. Nie wymaga CZM; nie instalowac
+release, tylko VDF do `Data/Plugins`. Nie wymaga CZM; nie instalowac
 drugiej kopii Mini. Wydzielenie nie dodaje ani nie zmienia mechanik.

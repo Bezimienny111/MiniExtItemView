@@ -1,8 +1,7 @@
 # MiniExtItemView
 
-Standalone Union plugin for Gothic I, Gothic Sequel (G1A), Gothic II Classic
-and Gothic II Night of the Raven. This is a four-engine **build scope**, not
-a claim that all game/renderer combinations have passed runtime testing.
+Standalone Union plugin for Gothic games. SDK compilation does not imply
+that all game/renderer combinations have passed runtime testing.
 
 Wraps native item descriptions using the current font, preserves values/colors, and centers the item preview. No extra item lines, scrolling, INI or menu.
 
